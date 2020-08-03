@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Runtime.InteropServices;
 
 namespace Haceau.DataStruct.Test
 {
@@ -9,7 +6,13 @@ namespace Haceau.DataStruct.Test
     {
         static void Main(string[] args)
         {
-            LinkedList<int> list = new LinkedList<int>(10);
+            DynamicArray<int> arr = new DynamicArray<int>();
+            arr.Add(10);
+            arr.Add(20);
+            arr.Add(30);
+            arr.Count = 1;
+            foreach (var item in arr)
+                Console.WriteLine(item);
         }
     }
 }

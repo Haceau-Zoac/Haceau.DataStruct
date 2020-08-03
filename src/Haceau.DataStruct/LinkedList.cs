@@ -21,7 +21,7 @@ namespace Haceau.DataStruct
             {
                 int rmValue = 0;
                 if (value < length)
-                    Remove(value);
+                    RemoveToEnd(value);
                 else
                 {
                     Linked list;
@@ -282,7 +282,7 @@ namespace Haceau.DataStruct
         /// 删除index之后的所有数据
         /// </summary>
         /// <param name="index">索引</param>
-        public void Remove(int index)
+        public void RemoveToEnd(int index)
         {
             if (index > Length)
                 throw new ArgumentException("索引过大。");
