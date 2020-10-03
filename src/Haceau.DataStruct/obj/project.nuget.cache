@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8c2zJKNWyuQhllpdcwS6GlYF6xbreR0QewFFJg9WyhbQilpD9/GaRJThW9WxUZH68TIh/hlHSjUUAgsZrl37tw==",
+  "success": true,
+  "projectFilePath": "G:\\code\\CSharp\\Haceau.DataStruct\\src\\Haceau.DataStruct\\Haceau.DataStruct.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

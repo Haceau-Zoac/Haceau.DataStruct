@@ -6,16 +6,41 @@ namespace Haceau.DataStruct.Test
     {
         static void Main(string[] args)
         {
-            Stack<int> stack = new Stack<int>();
-            stack.Push(100);
-            Console.WriteLine($"length: {stack.Count}");
-            Console.WriteLine($"pop: {stack.Pop()}");
-            Console.WriteLine($"length: {stack.Count}");
-            stack.Count = 10;
-            stack.Push(10);
-            Console.WriteLine($"length: {stack.Count}");
-            foreach (var item in stack)
+            Queue<int> qwq = new Queue<int>();
+            qwq.Enqueue(12);
+            qwq.Enqueue(123);
+            qwq.Enqueue(7474);
+            foreach (var item in qwq)
+            {
                 Console.WriteLine(item);
+            }
+            Console.WriteLine("---");
+
+            Console.WriteLine(qwq.Dequeue());
+            Console.WriteLine(qwq.Dequeue());
+            Console.WriteLine(qwq.Dequeue());
+            try
+            {
+                Console.WriteLine(qwq.Dequeue());
+            }
+            catch (InvalidOperationException e)
+            {
+                Console.WriteLine("message: {0}", e.Message);
+            }
+            qwq.Enqueue(253);
+            qwq.Enqueue(999);
+            Console.WriteLine(qwq.Peek());
+            Console.WriteLine(qwq.Count);
+            qwq.Remove(253);
+            Console.WriteLine(qwq.Count);
+            if (qwq.TryDequeue(out int result))
+                Console.WriteLine(result);
+            else
+                Console.WriteLine("ERROR.");
+            if (qwq.TryPeek(out result))
+                Console.WriteLine(result);
+            else
+                Console.WriteLine("ERROR.");
         }
     }
 }

@@ -1,0 +1,8 @@
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\bin\Debug\netstandard2.0\Haceau.DataStruct.deps.json
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\bin\Debug\netstandard2.0\Haceau.DataStruct.dll
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\bin\Debug\netstandard2.0\Haceau.DataStruct.pdb
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\obj\Debug\netstandard2.0\Haceau.DataStruct.AssemblyInfoInputs.cache
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\obj\Debug\netstandard2.0\Haceau.DataStruct.AssemblyInfo.cs
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\obj\Debug\netstandard2.0\Haceau.DataStruct.csproj.CoreCompileInputs.cache
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\obj\Debug\netstandard2.0\Haceau.DataStruct.dll
+G:\code\CSharp\Haceau.DataStruct\src\Haceau.DataStruct\obj\Debug\netstandard2.0\Haceau.DataStruct.pdb

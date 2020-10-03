@@ -8,7 +8,7 @@ namespace Haceau.DataStruct
 {
     public class LinkedList<T> : ICollection<T>, IReadOnlyCollection<T>, IReadOnlyList<T>, IEnumerable<T>, IList<T>
     {
-        private int length = 0;
+        protected int length = 0;
 
         /// <summary>
         /// 长度
@@ -90,12 +90,12 @@ namespace Haceau.DataStruct
         /// <summary>
         /// 头链表
         /// </summary>
-        private Linked head;
+        protected Linked head;
 
         /// <summary>
         /// 尾链表
         /// </summary>
-        private Linked tail;
+        protected Linked tail;
 
 
         /// <summary>
@@ -307,7 +307,10 @@ namespace Haceau.DataStruct
                 throw new Exception("索引过大。");
             if (index < 0)
                 throw new ArgumentException("索引过小。");
-
+            if (index == 0)
+                RemoveStart();
+            if (index == Length)
+                RemoveEnd();
             Linked list = head;
             for (int i = 0; i < index; ++i)
                 list = list.next;
@@ -323,8 +326,11 @@ namespace Haceau.DataStruct
         {
             if (Length == 0)
                 throw new Exception("数据过少。");
-            head.next.last = null;
-            head = head.next;
+            if (Length != 1)
+            {
+                head.next.last = null;
+                head = head.next;
+            }
             --length;
         }
 
@@ -981,7 +987,7 @@ namespace Haceau.DataStruct
         /// <summary>
         /// 节点
         /// </summary>
-        private class Linked
+        protected class Linked
         {
             /// <summary>
             /// 下一个
